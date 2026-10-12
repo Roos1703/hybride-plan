@@ -1,0 +1,317 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#1F4D45"><link rel="apple-touch-icon" href="icon-180.png"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Hybride plan: 30 nov 2026 t/m halve marathon 18 april 2027</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#F4F6F5;--card:#fff;--ink:#14201C;--mut:#64736E;--line:#E1E7E4;--pri:#1F4D45;--run:#2E6FA6;--hy:#C9651B;--rest:#9AA6A1;--today:#C9651B;--chip:#EEF3F1;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1715;--card:#17221F;--ink:#E7EFEC;--mut:#9DB0A9;--line:#2A3A35;--pri:#6FC2B1;--run:#6DAEE0;--hy:#EE9A5B;--rest:#7D8C86;--today:#EE9A5B;--chip:#22332E}}
+:root[data-theme="dark"]{--bg:#0F1715;--card:#17221F;--ink:#E7EFEC;--mut:#9DB0A9;--line:#2A3A35;--pri:#6FC2B1;--run:#6DAEE0;--hy:#EE9A5B;--rest:#7D8C86;--today:#EE9A5B;--chip:#22332E}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 56px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Barlow,system-ui,sans-serif}
+main{max-width:640px;margin:auto;padding:0 14px 60px}
+h1,h2,h3,h4,summary{font-family:'Barlow Condensed',Impact,sans-serif}
+h1{font-size:2rem;margin:16px 0 0;line-height:1.05}h2{font-size:1.5rem;margin:30px 0 6px}h4{margin:16px 0 4px;font-size:1.1rem}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;gap:6px;overflow-x:auto;padding:8px 14px;border-bottom:1px solid var(--line)}
+nav a{flex:none;color:var(--ink);text-decoration:none;padding:5px 12px;border-radius:16px;font-weight:600;font-size:.9rem;background:var(--chip)}
+.k{--c:var(--pri)}.r{--c:var(--run)}.h,.w{--c:var(--hy)}.z{--c:var(--rest)}
+.wsel{display:flex;align-items:center;gap:10px;margin:16px 0 10px}.wsel div{flex:1;text-align:center;line-height:1.25}
+.wsel button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:1.4rem;cursor:pointer}
+.strip{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:14px}
+.chip{--c:var(--rest);border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:6px 0 8px;display:flex;flex-direction:column;align-items:center;font:inherit;cursor:pointer}
+.chip b{font-size:1.15rem;line-height:1.25}.chip small{color:var(--mut)}.chip.tdy small{color:var(--today);font-weight:700}
+.chip i{min-width:14px;height:14px;border-radius:7px;background:var(--c);color:#fff;font:700 10px/14px sans-serif;margin-top:2px;text-align:center}
+.chip.on{border-color:var(--c);box-shadow:inset 0 0 0 2px var(--c)}
+.day{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--c);border-radius:14px;padding:16px;margin-bottom:12px}
+.day h3{font-size:1.9rem;margin:2px 0 8px;line-height:1.1}.day>small,small,.mut{color:var(--mut)}
+.mac{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0}.mac span{background:var(--chip);border-radius:10px;padding:8px 2px;text-align:center;font-size:.75rem;color:var(--mut)}.mac b{display:block;font-size:1.2rem;color:var(--ink)}
+.done{display:flex;align-items:center;gap:10px;margin-top:14px;padding:12px;background:var(--chip);border-radius:10px;font-weight:600}
+.nxt{width:100%;display:flex;gap:10px;text-align:left;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c);border-radius:10px;padding:10px 12px;margin:6px 0;font:inherit;color:inherit;cursor:pointer}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+.sc{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+input[type=text]{width:100%;max-width:80px;font:inherit;padding:5px 6px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:inherit}
+input[type=checkbox]{width:22px;height:22px;accent-color:var(--pri)}
+details.x>summary{cursor:pointer;font-size:1.2rem;font-weight:700}
+button.t{font:inherit;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:var(--chip);color:var(--ink);cursor:pointer}
+li{margin:2px 0}.rl{display:grid;grid-template-columns:1fr 1fr;gap:8px}.rl label,.rl1{font-size:.8rem;color:var(--mut)}.rl input,.rl1 input{max-width:none;width:100%;display:block;margin-top:2px}.rl1{display:block;margin-top:8px}.nh{color:var(--pri)!important;font-weight:600}.hy{margin:6px 0;padding-left:20px}.hy li{margin:2px 0}.rl3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:6px}.rl3 label{font-size:.8rem;color:var(--mut)}.rl3 input{max-width:none;width:100%;display:block;margin-top:2px}.warn:not(:empty){background:var(--chip);border-left:5px solid var(--hy);padding:10px 12px;border-radius:8px;margin:10px 0}select{font:inherit;padding:6px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:inherit;max-width:100%}
+</style></head><body><main id="top">
+<h1>Hybride plan: kracht, HYROX en halve marathon</h1>
+<p class="mut">30 november 2026 t/m zondag 18 april 2027 (20 weken). Vink dagen af en vul gewichten in: alles wordt in je browser bewaard.</p>
+<p id="cdn" class="mut" style="margin:2px 0 10px"></p>
+<nav id="nav"></nav>
+<div id="plan"></div>
+
+<details class="x card" id="ov"><summary>Periodisering en alle weken</summary><div class="sc" style="margin-top:8px"><table id="ovt"></table></div></details>
+
+<details class="x card" id="hulp"><summary>Zo werkt het plan</summary>
+<h4>1. Startgewichten (S)</h4>
+<p>Je kent je gewichten het best, dus ik gebruik geen willekeurige kilo's. <b>S = het gewicht waarmee je alle sets van week 2 netjes haalt met nog een of twee herhalingen over (dus niet tot het uiterste).</b> Gebruik week 1 (licht) om dat te testen. Vul S hieronder in: alle doelgewichten per week worden dan automatisch berekend en afgerond.</p>
+<div class="sc"><table><thead><tr><th>Oefening<th>S (kg)</tr></thead><tbody id="stab"></tbody></table></div>
+<h4>RPE uitgelegd</h4>
+<p><b>RPE</b> is het inspanningsgevoel van 1 tot 10 (3–4 = easy, 7 = pittig, 9–10 = alles geven). Handig bij je runs.</p>
+<h4>2. Progressie (dubbele progressie)</h4>
+<ul><li>Per blok van 4 weken: week A reps = basis, week B +1 rep, week C +1 rep, week D = deload (−1 set, −10% gewicht).</li>
+<li>Volgend blok: gewicht omhoog (+4% per blok, afgerond) en reps terug naar de basis. Voorbeeld: 3×8 @50 → 3×9 @50 → 3×10 @50 → deload → 3×8 @52,5.</li>
+<li>Onder elke oefening staat wat je volgende keer doet: zwaarder, +1 rep, zelfde of deload. Haal je de reps niet, herhaal dan hetzelfde gewicht.</li>
+<li>Jan/feb: hoofdlifts krijgen een 4e set (prioriteit spiermassa). Vanaf maart: intensiteit vasthouden, volume omlaag (3 sets hoofdlifts, 2 sets rest).</li>
+<li>Vervangen zonder gewichtsverlies: back squat mag hack squat zijn, pull-up mag lat pulldown. Hip thrust staat alleen op de lowerdag zodat je benen fris zijn voor je zondagrun.</li></ul>
+<h4>3. Looptempo's en hartslag (startpunt)</h4>
+<p>Gebaseerd op 5 km ±25:00, 10 km ±55:00, 12 km ±1:08 (±5:40/km), VO₂max ±51 en max HR ±191. Voor 21,1 km komt dat op een huidige schatting van ±2:02–2:04.</p>
+<div class="sc"><table><thead><tr><th>Type<th>Tempo/km<th>RPE<th>HR</tr></thead><tbody>
+<tr><td>Easy / lange duurloop<td>6:20–6:50<td>3–4 (praten kan)<td>134–153 (Z2)</tr>
+<tr><td>Steady<td>5:55–6:05<td>5–6<td>153–162</tr>
+<tr><td>HM-tempo (start)<td>5:40–5:45<td>6–7<td>160–168</tr>
+<tr><td>Threshold<td>5:20–5:25<td>7<td>162–172</tr>
+<tr><td>Interval (800 m–1 km)<td>4:55–5:05<td>8–9<td>172–185</tr></tbody></table></div>
+<p><b>Paces bijstellen:</b> doe de 5 km-tijdtest (week 13), vul je tijd in en ga daarna met de nieuwe waarden verder. Tussendoor: voelt een easy run te zwaar, loop dan op RPE/HR en niet op tempo.</p>
+<p><b>Easy-tempo bepalen:</b> easy is een gevoel, het tempo is de uitkomst. Je moet hele zinnen kunnen praten en door je neus kunnen ademen; HR 134–153 gaat voor tempo. Start elke run met 1–2 km op 6:40–7:10 en loop dan naar het gevoel (meestal 6:20–6:50). Op een zware of warme dag mag het 6:50–7:10 zijn. Na de 5 km-test: easy = testtempo +80 tot +110 sec/km.</p>
+<p><b>Warming-up en cooling-down:</b> altijd rustig (6:30–7:10, RPE 2–3). <b>Strides:</b> 20 sec vlot maar ontspannen (±4:40–4:50/km, RPE 7), daarna 60 sec wandelen of rustig joggen.</p>
+<p>5 km-tijd (mm:ss): <input type="text" id="tt" placeholder="25:00" style="max-width:80px"></p><p id="ttout" class="mut"></p><p><small>Zodra je een geldige tijd invult, passen alle tempo's in het plan zich automatisch aan.</small></p>
+<h4>4. Voeding rond training</h4>
+<p>Startpunt, geen waarheid: schatting rustmetabolisme (Mifflin-St Jeor, 69 kg) ±1480 kcal; met 6 trainingsdagen ligt je onderhoud grofweg op 2300–2500 kcal (±200). Eiwit ±135 g elke dag (4 maaltijden van 30–35 g), vet ±65 g (min. 50), de rest koolhydraten. Jan/feb dus rond onderhoud, geen agressief tekort.</p>
+<ul><li><b>Voor zware training/kwaliteitsrun:</b> 1–2 g/kg koolhydraten (70–140 g) 2–3 uur ervoor + 25–30 g eiwit; vlak ervoor evt. 30 g snelle koolhydraten.</li>
+<li><b>Tijdens:</b> onder 75 min niets nodig. Lange runs vanaf ±14 km: 30–60 g koolhydraten per uur (1 gel ≈ 22–25 g per 30–35 min), toewerken naar 60 g/uur. Gel is dus nuttig bij runs ≥75 min en op racedag, niet bij krachttraining.</li>
+<li><b>Erna:</b> 1,0–1,2 g/kg koolhydraten (70–80 g) + 25–35 g eiwit binnen 1–2 uur, belangrijk na lange run, kwaliteitsrun of als je binnen 8 uur weer traint.</li>
+<li><b>Richting de race:</b> vanaf week 18 koolhydraten omhoog (zie dagdoelen). Do–za racewek 6–7 g/kg (±415–485 g) via rijst, pasta, aardappel, wit brood, met weinig vezels op zaterdag. Racemorgen: 100–140 g koolhydraten 2–3 uur ervoor. Niets nieuws proberen.</li></ul><h4>5. Data bewaren en GitHub</h4>
+<p>Je invoer staat in je browser. Download hem af en toe en zet het bestand in je GitHub-repo; met importeren zet je het op een ander toestel terug.</p>
+<p><button class="t" id="exp">Download data (JSON)</button> <button class="t" id="icsb">Agenda (.ics)</button> <label>Importeer: <input type="file" id="imp" accept=".json"></label></p></details>
+
+
+<h2 id="vg">Voortgang</h2>
+<div class="card" id="adv"></div><div class="card" id="rp"></div>
+<h4>Krachtprogressie</h4><select id="scx"></select><div class="card" id="scc"></div>
+<h2 id="gw">Gewicht en lichaamsmetingen</h2>
+<div class="card" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center">
+<svg viewBox="0 0 250 310" width="190" role="img" aria-label="Meetpunten: borst, buik, bovenbeen" style="flex:none"><g fill="none" stroke="var(--mut)" stroke-width="2"><circle cx="100" cy="28" r="18"/><path d="M70 58Q100 50 130 58L136 150Q132 170 128 186L72 186Q68 170 64 150Z"/><path d="M70 62L50 150M130 62L150 150"/><path d="M72 186L78 300M100 186L96 300M128 186L122 300M100 186L104 300"/></g><g stroke="var(--hy)" stroke-width="2.5" stroke-dasharray="5 3"><line x1="62" y1="86" x2="138" y2="86"/><line x1="66" y1="136" x2="134" y2="136"/><line x1="70" y1="226" x2="112" y2="226"/></g><g fill="currentColor" font-size="14" font-weight="600"><text x="146" y="90">Borst</text><text x="146" y="140">Buik</text><text x="120" y="230">Bovenbeen</text></g></svg>
+<ul style="flex:1;min-width:230px;margin:0"><li><b>Borst:</b> rond het breedste punt (tepelhoogte), ontspannen uitgeademen, lint horizontaal en niet strak.</li><li><b>Buik:</b> ter hoogte van je navel, na een gewone uitademing, niet inhouden.</li><li><b>Bovenbeen:</b> rechterbeen, halverwege lies en knieschijf, gewicht verdeeld.</li><li>Meet 1× per week op dezelfde dag, 's ochtends nuchter, 2× meten en neem het gemiddelde. Weeg jezelf elke ochtend en vul het in bij het blokje Gewicht in de dagkaart; omtrekken vul je 1× per week in bij Wekelijkse meting.</li></ul></div>
+<div class="card" id="wst"></div><div class="card" id="gch"></div>
+<h4>Wekelijks overzicht</h4><div class="sc"><table id="l3"></table></div>
+
+<h2 id="rd">Racedag-planner</h2>
+<div class="card"><p>Doeltijd (u:mm:ss): <input type="text" id="goal" style="max-width:110px" placeholder="1:57:00"></p><div class="sc"><div id="rcp"></div></div>
+<h4>Koolhydraten rond de race</h4><ul><li>Do tot za: 6–7 g/kg per dag (±415–485 g): rijst, pasta, aardappel, wit brood. Zaterdag weinig vezels.</li><li>Racemorgen: 100–140 g koolhydraten 2–3 uur voor de start, daarna alleen water.</li><li>Tijdens: gels op de markeringen hierboven plus water of sportdrank bij elke drankpost, samen ±45–60 g per uur. Alles eerst getest in je lange runs.</li></ul></div>
+<h2 id="end">Afsluiting</h2>
+<div class="card"><h4>1. Verwachte trainingsprogressie</h4>
+<ul><li><b>Kracht:</b> met 4–5 jaar ervaring gaat het langzamer dan bij beginners: ±5–10% op hoofdlifts (squat, hip thrust, presses) over de drie krachtblokken, accessoires +1–2 kg per blok.</li>
+<li><b>Lichaamssamenstelling:</b> gewicht blijft ±68–70 kg; realistisch is iets meer spiermassa en iets minder vet (recomp), geen snelle verandering op de weegschaal.</li>
+<li><b>Hardlopen:</b> 5 km ±25:00 → ±24:00–24:30, 10 km ±55:00 → ±52:30–53:30, lange run tot 20 km. HYROX-niveau blijft grotendeels behouden.</li></ul>
+<h4>2. Doeltempo halve marathon</h4>
+<ul><li><b>A-doel: 1:57:00 (5:33/km).</b> Haalbaar als je 5 km-test rond 24:30 uitkomt. Stretch: 1:55 (5:27/km).</li>
+<li><b>B-doel: 1:59–2:00 (5:39–5:41/km)</b> bij kleinere progressie of tegenvallend weer.</li>
+<li>Beslis in week 18 op basis van de 5 km-test en de 8 km HM-tempo in je 20 km.</li>
+<li>Raceplan: km 1–5 op 5:38–5:40 (inhouden), km 5–16 op 5:33, daarna als je je goed voelt 5:25–5:30. HR liefst onder 172 tot km 15. Gel per 30–35 min vanaf km 5.</li></ul>
+<h4>3. Calorieën bijstellen</h4>
+<ul><li>Elke 2–3 weken: gemiddelde wekelijkse gewicht (zelfde moment, weeggemiddelde) + honger, herstel en prestaties.</li>
+<li>Gewicht ±stabiel (±0,3 kg) en herstel goed: niets veranderen.</li>
+<li>Gewicht daalt >0,3 kg/week, je bent moe of prestaties dalen: +150–200 kcal (vooral koolhydraten).</li>
+<li>Gewicht stijgt >0,25 kg/week gedurende 3 weken zonder betere prestaties: −100–150 kcal (uit koolhydraten op rustdagen).</li>
+<li>Maart/april: geen tekort. Prestatie en herstel gaan voor vetverlies.</li></ul>
+<h4>4. Signalen van overbelasting</h4>
+<ul><li>Rusthartslag 5–7 slagen/min hoger gedurende 3 dagen, of HRV duidelijk onder je normaal.</li>
+<li>Slecht slapen, constante vermoeidheid, prikkelbaarheid of weinig zin in trainen.</li>
+<li>Kracht daalt 2 sessies op rij of de gewichten voelen steeds zwaarder dan gepland; easy runs voelen zwaar bij hetzelfde tempo.</li>
+<li>Aanhoudende spierpijn, zeurende pijn aan pees/scheenbeen/knie, of verstoorde menstruatie.</li>
+<li>Bij 2+ signalen: kies een lichte week (deload). Blijft het langer dan 1–2 weken, overleg met een arts of sportdiëtist.</li></ul></div>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+let LS={};try{LS=JSON.parse(localStorage.getItem('hm26')||'{}')}catch(e){}
+const sv=()=>{try{localStorage.setItem('hm26',JSON.stringify(LS))}catch(e){}};
+const DN=['Ma','Di','Wo','Do','Vr','Za','Zo'],MN=['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+const START=new Date(2026,10,30);
+const dt=(n,d)=>{const x=new Date(START);x.setDate(x.getDate()+(n-1)*7+d);return x};
+const fd=x=>x.getDate()+' '+MN[x.getMonth()];
+const E_='6:20–6:50',T_='5:20–5:25',I_='4:55–5:00',H_='5:40–5:45';
+const HR={e:'134–153 (Z2)',s:'153–162',hm:'160–168',t:'162–172',i:'172–185'};
+const run=(km,main,pace,rpe,hr,wu='1 km rustig inlopen @ 6:40–7:10, RPE 2–3',cd='1 km uitlopen @ 6:40–7:10, RPE 2–3')=>`<b>${km} km totaal</b><br>WU: ${wu}<br>Hoofd: ${main}<br>CD: ${cd}<br>Tempo: ${pace}, RPE ${rpe}, HR ${hr}`;
+const M=(kc,F=65)=>[kc,135,Math.round((kc-540-F*9)/20)*5,F];
+const ph=n=>n<=5?0:n<=9?1:n<=13?2:n<=18?3:4;
+const PHN=['FASE 1: December, overgang en herstel','FASE 2: Januari, hypertrofie en kracht','FASE 3: Februari, hypertrofie, kracht en loopbasis','FASE 4: Maart, specifieke halve-marathonopbouw','FASE 5: April, piek, taper en race'];
+const PHW=['Na HYROX zijn spieren en zenuwstelsel moe. Week 1 is bewust licht; daarna bouw je kracht en volume rustig op. Lopen blijft onderhoud (2 runs), zodat herstel naar krachttraining gaat.',
+'Spiermassa heeft frequentie en progressie nodig. Met 3× kracht en maar 2 runs (vooral easy) blijft de loopbelasting laag genoeg om te herstellen. Hoofdlifts krijgen een extra set; elke 4e week is een deload.',
+'Tweede deel van het krachtblok met meer loopbasis (lange run tot 13 km). Week 13 is licht en bevat de 5 km-test, zodat je fris en met juiste paces aan maart begint.',
+'Het doel verschuift naar de halve marathon: 3 runs (kwaliteit, easy, lang), 2× kracht. Krachtintensiteit blijft gelijk maar volume gaat omlaag; meer koolhydraten voor het loopvolume. HYROX wordt korter.',
+'Piek (week 18) gevolgd door taper: volume −30% maar intensiteit blijft, zodat je fris maar scherp aan de start staat.'];
+const MODE=n=>n==1?'herstel':n>=19?'taper':(n==17||[5,9,13].includes(n))?'deload':n>=14?'hold':'build';
+const BLK=n=>n<6?0:n<10?1:n<14?2:3,FF=[1,1.04,1.08,1.08];
+const WD=['Herstel van HYROX: laag volume, techniek en gewichten testen voor je S. Slaap, eiwit en koolhydraten op peil.',
+'Eerste opbouwweek. Dit zijn je S-gewichten. Zaterdag rust voor je zondagrun.',
+'Reps +1 op alle lifts, gewicht gelijk. Loopvolume rustig omhoog.',
+'Laatste opbouwweek blok 1. Kerst: verplaats een training in plaats van schrappen; slaap en eiwit vasthouden.',
+'Deload rond de jaarwisseling: −1 set, −10% gewicht. Mag een training lichter of korter bij vermoeidheid.',
+'Start blok 2 (+4% t.o.v. S), 4e set op hoofdlifts. Kcal rond onderhoud: spieropbouw gaat voor.',
+'Reps +1. Eerste strides in de easy run.',
+'Zwaarste week van blok 2. Let op beenherstel vóór de lange run (12 km met steady-slot).',
+'Deload. Check gewichtstrend van de afgelopen 2–3 weken en pas kcal aan.',
+'Start blok 3 (+8% t.o.v. S). Lange run naar 11 km.',
+'Reps +1; 2×10 min steady in je easy run.',
+'Piek van het krachtblok en langste run (13 km). Tempoprikkel 3×5 min.',
+'Lichte week met 5 km-test op dinsdag. Vul je tijd in bij de paces en begin fris aan maart.',
+'Start halve-marathonblok: 2× kracht, 3× run. Eerste intervallen (6×800 m). HYROX korter.',
+'Eerste threshold-blok. Lange run 15 km; oefen een gel. Koolhydraten omhoog.',
+'Zwaarste opbouwweek: 17 km met 4 km HM-tempo. Slaap en eten bewaken.',
+'Herstelweek: minder volume overal. Je moet bijkomen voor de piekweek.',
+'Piekweek: 20 km met 8 km HM-tempo, laatste zware training. Zeer moe? Kap af op 18 km.',
+'Taper 1: loopvolume −30%, intensiteit blijft (3×2 km HM-tempo). Geen nieuwe producten of schoenen.',
+'Racewek: scherp, niet moe. Koolhydraten omhoog do–za. Zondag 18 april is de halve marathon.'];
+const BEL={herstel:'Laag (±40% van normaal)',build:'Matig tot hoog, opbouw',deload:'Laag: −1 set, −10% gewicht',hold:'Matig: kracht onderhouden, loopvolume stijgt',taper:'Laag, scherp blijven'};
+const HER={herstel:'Slaap ≥7,5 u, wandelen, mobiliteit.',build:'48 u tussen zware benen (ma) en lange run; ≥7 u slaap.',deload:'Dit is een herstelweek: niet extra trainen.',hold:'Slaap ≥7,5 u; extra koolhydraten rond runs.',taper:'Slaap ≥8 u, niets nieuws.'};
+const HY=['Techniek licht (30–35 min): 3×(500 m Row + 250 m SkiErg) RPE 4, 4×20 m sled licht, 2×15 wall balls.',
+'Engine: 5 rondes: 500 m SkiErg, 20 wall balls, 20 m sled push, 1 min rust (RPE 7).',
+'Sled en carry: 5×(20 m sled push + 20 m sled pull) RPE 7, daarna 4×50 m farmer carry zwaar, 3×10 burpees.',
+'Row/Ski intervals: 6×(2 min SkiErg hard + 2 min Row hard), 1 min rust (RPE 8), 3×20 wall balls.',
+'Burpee en lunges: 4 rondes: 80 m burpee broad jumps, 50 m walking lunges (DB), 20 wall balls, 90 s rust (RPE 7).',
+'Station-simulatie zonder run, halve afstanden: SkiErg, sled push, sled pull, burpees, Row, farmer, lunges, wall balls (RPE 7).',
+'EMOM 20 min: min 1: 15 wall balls, min 2: 15/12 cal SkiErg, min 3: 40 m farmer carry, min 4: rust.',
+'Sled-piramide: 10-20-30-20-10 m push en pull, daarna 5×500 m SkiErg (RPE 7).',
+'Row 3×1500 m RPE 7 (2 min rust), 4×20 m sled push, 50 wall balls verdeeld.',
+'Station-simulatie zonder run (variant): halve afstanden, andere volgorde, RPE 7.'];
+const SD={L:'Hack squat, RDL, hip thrust, Bulgarian split squat, calf raises',U:'Lat pulldown, incline press, seated row, lateral raises, biceps, triceps',F:'Leg press, hip thrust, chest-supported row, shoulder press, cable crunch, ab roller'};
+const SES={L:['Kracht Lower',[['sq','Hack squat',6,3,2.5,'m'],['rdl','Romanian deadlift',8,3,2.5,'a'],['ht','Hip thrust',8,3,2.5,'a'],['bss','Bulgarian split squat (kg per hand)',8,3,1,'a'],['cr','Calf raises',12,3,2.5,'i']]],
+U:['Kracht Upper',[['lp','Lat pulldown',8,3,2.5,'m'],['ip','Incline dumbbell press (kg per hand)',8,3,1,'m'],['sr','Seated cable row',10,3,2.5,'a'],['lr','Lateral raises (kg per hand)',12,3,1,'i'],['bi','Biceps curl',10,2,1,'i'],['tr','Triceps pushdown',10,2,2.5,'i']]],
+F:['Kracht Full Body',[['lg','Leg press',10,3,5,'a'],['ht','Hip thrust',8,3,2.5,'a'],['cs','Chest-supported row',10,3,2.5,'a'],['sh','Shoulder press (kg per hand)',8,3,1,'m'],['cc','Cable crunch',12,3,2.5,'i'],['ar','Ab roller (eigen gewicht)',8,3,0,'i']]]};
+const TUE={2:[5,''],3:[6,''],4:[6,', laatste 2 km 4×20 sec strides (60 sec rust)'],5:[5,''],6:[6,''],7:[7,', 4×20 sec strides op het einde'],8:[7,', met 15 min steady (5:55–6:05) in het midden'],9:[5,''],10:[8,', 6×30 sec strides op het einde'],11:[8,', met 2×10 min steady (5:55–6:05), 2 min rustig ertussen'],12:[8,', met 3×5 min @ 5:20–5:25 (RPE 7), 2 min jog tussen']};
+const LG={1:[7],2:[8],3:[9],4:[10],5:[8],6:[10],7:[11],8:[12,', laatste 2 km steady (5:55–6:05)'],9:[9],10:[11],11:[12,', laatste 3 km steady'],12:[13,', laatste 3 km steady'],13:[10],14:[13],15:[15,', laatste 2 km steady. Oefen 1 gel na 45 min'],16:[17,'','eerste 13 km easy, laatste 4 km @ 5:40–5:45 (HM-tempo, RPE 6–7). Oefen gels'],17:[12],18:[20,'','eerste 6 km easy, 8 km @ 5:40–5:45 (HM-tempo), laatste 6 km easy. 1 gel per 30–35 min. Zeer moe? Kap af op 18 km'],19:[10,', + 4 strides']};
+const Q={14:[10,'6×800 m @ '+I_+', 400 m jog rust',I_,'8',HR.i],15:[10,'3×8 min @ '+T_+', 2 min jog rust',T_,'7',HR.t],16:[10,'5×1 km @ 5:00–5:05, 400 m jog rust','5:00–5:05','8',HR.i],17:[8,'20 min aaneen @ '+T_,T_,'7',HR.t],18:[10,'3×10 min @ '+T_+', 2 min jog rust',T_,'7',HR.t],19:[10,'3×2 km @ HM-tempo ('+H_+'), 2 min jog rust',H_,'6–7',HR.hm]};
+const EZ={14:6,15:7,16:7,17:6,18:7,19:6};
+const K={Z:[2450,2350],K:[2350,2300],E:[2300,2450],T:[2550,2550],H:[2500,2450],R:[2150,2250]};
+const CL={Z:'k',K:'k',E:'r',T:'r',L:'r',H:'h',R:'z',W:'w'};
+function mac(d,n){if(d.x)return d.x;let kc,F=65;if(d.ty=='L'){const k=d.km;kc=k<=11?2500:k<=14?2650:k<=17?2800:2950}else kc=K[d.ty][n>=14?1:0];if(n==1)kc-=100;if(d.ty=='R')F=70;return M(kc,F)}
+const HYWU='Warming-up (8–10 min): 2 min Row of SkiErg rustig, 10 air squats, 10 walking lunges, 10 push-ups, 2×10 m sled licht.';
+function hyx(i,n){const f=n==1?.5:[5,9,13].includes(n)?.7:n>=14?.75:1,R=b=>Math.max(2,Math.round(b*f)),M=(x,st)=>Math.max(st,Math.round(x*f/st)*st),sl=n==1?'±40%':n>=14?'±60%':'±75%';
+const S=[
+{t:'Techniek licht',b:30,h:'3 rondes',rpe:'4',l:['500 m Row (rustig)','250 m SkiErg','20 m sled push (licht, techniek)','10 wall balls'],r:'60 s na elke ronde'},
+{t:'Engine',b:40,h:R(5)+' rondes',rpe:'7',l:['500 m SkiErg','20 wall balls','20 m sled push'],r:'60 s na elke ronde'},
+{t:'Sled en carry',b:45,h:R(5)+' rondes + finisher',rpe:'7',l:['20 m sled push','20 m sled pull','Daarna 1×: 4×50 m farmer carry (90 s rust) + 3×10 burpees'],r:'60 s na elke ronde'},
+{t:'Row en Ski intervals',b:40,h:R(6)+' rondes + finisher',rpe:'8',l:['2 min SkiErg hard','2 min Row hard','Daarna 1×: 3×20 wall balls (60 s rust)'],r:'60 s na elke ronde'},
+{t:'Burpees en lunges',b:45,h:R(4)+' rondes',rpe:'7',l:['80 m burpee broad jumps (4×20 m)','50 m walking lunges (DB)','20 wall balls'],r:'90 s na elke ronde'},
+{t:'Station-simulatie (halve afstanden)',b:40,h:'1 ronde, 8 stations',rpe:'7',l:[M(500,50)+' m SkiErg',M(25,5)+' m sled push',M(25,5)+' m sled pull',M(40,10)+' m burpee broad jumps',M(500,50)+' m Row',M(100,25)+' m farmer carry',M(50,10)+' m walking lunges',M(50,10)+' wall balls'],r:'30 s tussen stations'},
+{t:'EMOM',b:20,h:R(5)+' rondes van 4 min (EMOM)',rpe:'7',l:['Min 1: 15 wall balls','Min 2: 12 cal SkiErg','Min 3: 40 m farmer carry','Min 4: rust'],r:'elke minuut opnieuw starten'},
+{t:'Sled-piramide en SkiErg',b:45,h:'2 blokken',rpe:'7',l:['Sled push + sled pull: '+(f<1?'10-20-20-10':'10-20-30-20-10')+' m (push en pull per afstand)',R(5)+'×500 m SkiErg'],r:'45 s tussen sled-sets, 60 s tussen SkiErg-sets'},
+{t:'Row en sled',b:45,h:'3 blokken',rpe:'7',l:[R(3)+'×1500 m Row','4×20 m sled push (45 s rust)','50 wall balls (5×10, 20 s rust)'],r:'2 min na elke Row'},
+{t:'Station-simulatie (variant, halve afstanden)',b:40,h:'1 ronde, 8 stations',rpe:'7',l:[M(500,50)+' m Row',M(50,10)+' m walking lunges',M(100,25)+' m farmer carry',M(40,10)+' m burpee broad jumps',M(25,5)+' m sled pull',M(25,5)+' m sled push',M(500,50)+' m SkiErg',M(50,10)+' wall balls'],r:'30 s tussen stations'}][i],x=S;
+return `<b>${x.t}</b><br><b>${x.h}</b>, ±${i?Math.round(x.b*f/5)*5:x.b} min, RPE ${x.rpe}<br><small>${HYWU}</small><ul class="hy">`+x.l.map(l=>`<li>${l}</li>`).join('')+`</ul>Rust: ${x.r}<br><small>Gewicht: sled ${sl} van je wedstrijdgewicht; farmer carry, lunges en wall balls op wedstrijdgewicht (lichter bij vermoeidheid).${n>=14?' Maart: geen beenfaal, houd je zondagrun fris.':''}${[5,9,13].includes(n)?' Deload-week: volume ×0,7.':''}${n==1?' Week 1: alleen techniek, volume ×0,5.':''}</small>`}
+function days(n){const D=[],a=(ty,lab,det,km=0,s='',x)=>D.push({ty,lab,det,km,s,x});
+const Ez=(km,x='')=>a('E','Easy run',run(km,`${km-2} km easy${x}`,E_,'3–4',HR.e),km);
+const Lg=()=>{const [km,x,c]=LG[n];a('L','Lange duurloop',run(km,c||`${km-2} km easy${x||''}`,E_,'3–4',HR.e),km)};
+const rest=(t='Volledige rustdag. Wandelen mag.')=>a('R','Rust',t);
+const hs=n==1?'':[5,9,13].includes(n)?'<br>Deload: 70% van het volume.':n>=14?'<br>Max 35–40 min, sled −20%, geen beenfaal (zondag lange run).':'<br>±50 min incl. warming-up, RPE 6–7.';
+const hy=()=>a('H',n>=14?'HYROX kort (zonder run)':'HYROX (zonder run)',hyx(n==1?0:(n-1)%9+1,n));
+if(n==1){rest('Wandelen of mobiliteit. Geen training (dag na HYROX).');a('K','Kracht Full Body (licht)',SD.F+'. 2 sets, licht, test je gewichten.',0,'F');Ez(5);hy();a('K','Kracht Upper (licht)',SD.U+'. 2 sets, licht.',0,'U');rest();Lg()}
+else if(n<=13){a('Z','Kracht Lower',SD.L,0,'L');
+if(n==13)a('E','5 km-tijdtest',run(8,'5 km tijdtest: gelijkmatig zo snel mogelijk. Noteer tijd en gem. HR','zo snel mogelijk','9','>172','2 km opbouwen van 6:40 naar 5:30 + 4 strides (20 sec @ ±4:45)','1 km uitlopen @ 6:40–7:00'),8);else Ez(...TUE[n]);
+a('K','Kracht Upper',SD.U,0,'U');hy();a('K','Kracht Full Body',SD.F+'. Benen niet tot falen i.v.m. zondag.',0,'F');rest();Lg()}
+else if(n<=19){const q=Q[n];a('T','Kwaliteitsrun',run(q[0],q[1],q[2],q[3],q[4],'2 km easy @ 6:30–6:50, RPE 3, daarna 4 strides (20 sec @ ±4:45, 60 sec rustig)','1,5 km easy @ 6:40–7:00, RPE 2–3'),q[0]);a('Z','Kracht Lower',SD.L+'. Intensiteit vasthouden, volume laag.',0,'L');Ez(EZ[n],n==19?', + 4 strides':'');a('K','Kracht Upper',SD.U,0,'U');hy();rest();Lg()}
+else{a('T','Scherpte-run',run(6,'4×400 m vlot (±4:50, RPE 7–8), 200 m jog rust','4:50–5:00','7',HR.i,'2 km easy @ 6:30–6:50 + 4 strides (20 sec @ ±4:45)','1 km easy @ 6:40–7:00'),6);a('K','Kracht Upper (licht)',SD.U+'. 2 sets, licht.',0,'U');Ez(6,', + 4 strides');rest('Rust. Koolhydraten omhoog (6–7 g/kg).');a('R','Rust en mobiliteit','15 min mobiliteit. Racekleding en gels klaarleggen.',0,'',M(2650,55));a('E','Shake-out',run(3,'3 km heel rustig + 4 strides',E_,'2–3','<140','—','—'),3,'',M(2800,45));a('W','RACE: halve marathon (18 april)','Ontbijt 2–3 uur ervoor met 100–140 g koolhydraten. Start 5:38–5:40, km 5–16 op 5:33, daarna 5:25–5:30 als het gaat. 1 gel per 30–35 min vanaf km 5 + sportdrank. Niets nieuws.',21,'',M(2700,50))}
+if(n==20)D[3].x=M(2500);return D}
+const WK=[];for(let n=1;n<=20;n++)WK[n]=days(n);
+function rx(e,n){const [k,l,lo,s,st,ty]=e,m=MODE(n),b=(n-2)%4,f=FF[BLK(n)];let o;
+if(m=='herstel')o={s:2,r:lo,i:'4–5',f:.8};
+else if(m=='build')o={s:ty=='m'&&n>=6?s+1:s,r:lo+b,i:b==2&&ty=='m'?2:[3,2,1][b],f};
+else if(m=='deload')o={s:Math.max(2,s-1),r:lo,i:4,f:f*.9};
+else if(m=='hold')o={s:ty=='m'?3:2,r:lo+1,i:'2–3',f};
+else o={s:2,r:lo,i:3,f};
+if(k=='fc'){o.r=lo}return o}
+const rnd=(v,s)=>(Math.round(v/s)*s).toString().replace('.',',');
+function wt(e,o){if(!e[4])return 'eigen gewicht';const S=parseFloat((LS['S'+e[0]]||'').replace(',','.'));const p=Math.round((o.f-1)*100);return S>0?rnd(S*o.f,e[4])+' kg':(p==0?'S':'S'+(p>0?'+':'−')+Math.abs(p)+'%')}
+const sk=n=>n>=14||MODE(n)=='deload';
+const T0=new Date();T0.setHours(0,0,0,0);const idx=Math.round((T0-START)/864e5);
+const OPEN=idx<0?1:idx>139?20:Math.floor(idx/7)+1;
+const HN={};
+function hint(bs){const [e,n,sl]=HN[bs],o=rx(e,n),num=x=>parseFloat(String(x??'').replace(',','.')),r=num(LS['r'+bs]),w=num(LS['w'+bs]),tr=parseFloat(o.i),st=e[4];
+const nxt=()=>{if(n>=20||!WK[n+1].some(d=>d.s==sl))return 'Laatste keer in het plan';const p=rx(e,n+1);if(p.f<o.f-.001)return 'Volgende keer: deload, lichter ('+wt(e,p)+')';if(p.f>o.f+.001)return 'Volgende keer: zwaarder, '+p.s+'×'+p.r+' @ '+wt(e,p);if(p.r>o.r)return 'Volgende keer: +1 rep ('+p.s+'×'+p.r+'), zelfde gewicht';return 'Volgende keer: zelfde '+p.s+'×'+p.r+' en gewicht'};
+return nxt()}
+function fb(n,cd){const g=f=>parseFloat(String(LS['v'+n+cd+'-'+f]??'').replace(',','.')),s=g('s'),b=g('b'),e=g('e'),t=mac(WK[n][cd],n)[0],o=[],r=x=>Math.round(x/50)*50||50;
+if(s>0)o.push(s<6.5?'Slaap kort: houd je training licht en eet genoeg':s<7?'Slaap net onder je doel van 7 uur':'Slaap goed');
+const q=g('q'),hv=g('h'),ab=(n-1)*7+cd;if(q>0)o.push(q<60?'Slaapscore laag':q<80?'Slaapscore redelijk':'Slaapscore goed');
+if(hv>0){const p=[];for(let a=ab-1;a>=Math.max(0,ab-14);a--){const x=parseFloat(String(LS['v'+(Math.floor(a/7)+1)+a%7+'-h']??'').replace(',','.'));if(x>0)p.push(x)}if(p.length<3)o.push('HRV genoteerd, vul nog een paar dagen in voor je gemiddelde');else{const av=p.reduce((x,y)=>x+y)/p.length;o.push(hv<av*.85?'HRV laag t.o.v. je gemiddelde ('+Math.round(av)+' ms): train vandaag rustiger (iets lichter of minder sets) en slaap goed':hv>av*1.15?'HRV hoog t.o.v. je gemiddelde: goed hersteld':'HRV normaal')}}
+if(e>0){const d=Math.round(e-t);o.push('Gegeten t.o.v. doel: '+(d>0?'+':'')+d+' kcal')}
+if(e>0&&b>0){const bal=Math.round(e-b),lo=-100,hi=250;o.push(bal<lo?'Te weinig: eet nog ±'+r(lo-bal)+' kcal erbij (vooral koolhydraten)':bal>hi?'Iets te veel: ±'+r(bal-hi)+' kcal boven je bandbreedte':'Op koers (gegeten min verbrand: '+(bal>0?'+':'')+bal+')')}
+return o.join('. ')}
+const pf=x=>parseFloat(String(x??'').replace(',','.'));
+const fp=x=>{x=Math.round(x);return Math.floor(x/60)+':'+String(x%60).padStart(2,'0')};
+const fh=x=>{x=Math.round(x);return Math.floor(x/3600)+':'+String(Math.floor(x%3600/60)).padStart(2,'0')+':'+String(x%60).padStart(2,'0')};
+function pz(t){const m=String(LS.tt??'').match(/^(\d+):(\d\d)$/);if(!m)return t;const p=(+m[1]*60+ +m[2])/5,f=fp;return t.split('6:20–6:50').join(f(p+80)+'–'+f(p+110)).split('5:55–6:05').join(f(p+55)+'–'+f(p+65)).split('5:40–5:45').join(f(p+40)+'–'+f(p+45)).split('5:20–5:25').join(f(p+20)+'–'+f(p+25)).split('4:55–5:00').join(f(p-5)+'–'+f(p)).split('5:00–5:05').join(f(p)+'–'+f(p+5))}
+const BASE=WK.map(w=>w&&w.slice());
+function applySw(){for(let n=1;n<=20;n++){const o=LS['sw'+n];WK[n]=o?o.map(i=>BASE[n][i]):BASE[n].slice()}}applySw();
+function chk(n){const D=WK[n];let w='';D.forEach((d,i)=>{if(d.ty!='L')return;[i-1,i+1].forEach(j=>{const x=D[j];if(x&&(x.ty=='Z'||x.s=='L'||x.s=='F'))w=`<p class="nh">Let op: ${x.lab} staat direct naast je lange run. Houd bij voorkeur 48 uur tussen zware benen en lange run.</p>`})});return w}
+function hv(a){const f=x=>pf(LS['v'+(Math.floor(x/7)+1)+x%7+'-h']),x=f(a);if(!(x>0))return null;const p=[];for(let k=a-1;k>=Math.max(0,a-14);k--){const y=f(k);if(y>0)p.push(y)}if(p.length<3)return null;return x/(p.reduce((s,y)=>s+y)/p.length)}
+function warn(a){let c=0;for(let k=a;k>a-3&&k>=0;k--){const n=Math.floor(k/7)+1,i=k%7,g=f=>pf(LS['v'+n+i+'-'+f]),r=hv(k);if((r!=null&&r<.85)||(g('s')>0&&g('s')<6.5)||(g('q')>0&&g('q')<60))c++}return c>=2?'<b>Herstel laag:</b> meerdere dagen lage HRV, korte slaap of lage slaapscore. Kies deze week een lichtere variant: −1 set per oefening, iets minder zwaar en je runs ±20% korter of alleen easy. Houd je rustdag en eet je doel.':''}
+function wsum(n){const D=WK[n],A={s:[],h:[],q:[],e:[],b:[],w:[]};let kd=0,kp=0,dn=0,tt=0;D.forEach((d,i)=>{for(const f in A){const x=pf(LS['v'+n+i+'-'+f]);if(x>0)A[f].push(x)}if(d.ty!='R'){tt++;if(LS['c'+n+i])dn++}if(d.km){kp+=d.km;if(LS['c'+n+i]){const k=pf(LS['u'+n+i+'-km']);kd+=k>0?k:d.km}}});
+const av=a=>a.reduce((x,y)=>x+y)/a.length,L=(t,a,u,dg=0)=>a.length?`<br>${t}: ${av(a).toFixed(dg).replace('.',',')}${u}`:'';
+return `<b>Weekoverzicht</b><br>Trainingen afgerond: ${dn} van ${tt}<br>Kilometers: ${kd.toFixed(1).replace('.',',')} van ${kp} gepland`+L('Gewicht gem.',A.w,' kg',1)+L('Slaap gem.',A.s,' u',1)+L('Slaapscore gem.',A.q,'')+L('HRV gem.',A.h,' ms')+L('Gegeten gem.',A.e,' kcal')+L('Verbrand gem.',A.b,' kcal')}
+function adv(){const W=[];for(let r=1;r<=20;r++){const x=wavg(r);if(x)W.push([r,x])}const cur=idx>=0&&idx<=139?Math.floor(idx/7)+1:1,a0=Math.min(139,Math.max(0,idx)),bs=[];for(let a=a0;a>a0-14&&a>=0;a--){const nn=Math.floor(a/7)+1,i=a%7,e=pf(LS['v'+nn+i+'-e']),b=pf(LS['v'+nn+i+'-b']);if(e>0&&b>0)bs.push(e-b)}
+let h='<b>Calorie-advies</b><br>';
+if(W.length<2)h+='Vul minstens twee wekelijkse gewichten in (bij Gewicht) voor een advies.';else{const [r1,w1]=W[W.length-1],[r2,w2]=W[W.length-2],sl=(w1-w2)/(r1-r2);h+=`Trend: ${sl>0?'+':''}${sl.toFixed(2).replace('.',',')} kg per week (${fm(w2)} → ${fm(w1)} kg, weekgemiddelden).<br>`+(sl<-.3?'Gewicht daalt te snel: +150–200 kcal per dag, vooral koolhydraten.':sl>.25?(cur<14?'Gewicht stijgt snel: −100 tot −150 kcal (op rustdagen uit koolhydraten), alleen als je prestaties niet beter worden.':'Gewicht stijgt licht: in de laatste weken niet bijsturen.'):'Gewicht stabiel: geen aanpassing nodig.')}
+if(bs.length>=3){const m=Math.round(bs.reduce((x,y)=>x+y)/bs.length);h+=`<br>Gegeten min verbrand (gem. ${bs.length} dagen): ${m>0?'+':''}${m} kcal.`+(m<-150?' Je zit structureel in een tekort: eet meer.':m>300?' Ruim boven je verbruik.':'')}
+h+='<br><small>Alleen advies: check ook honger en herstel.</small>';$('#adv').innerHTML=h}
+function rp(){const R=[];let tk=0;for(let a=0;a<140;a++){const n=Math.floor(a/7)+1,i=a%7,d=WK[n][i];if(!['E','T','L','W'].includes(d.ty))continue;const k=pf(LS['u'+n+i+'-km']);if(!(k>0))continue;tk+=k;const m=String(LS['u'+n+i+'-tp']??'').match(/^(\d+):(\d\d)$/),h=pf(LS['u'+n+i+'-hr']);if((d.ty=='E'||d.ty=='L')&&m&&h>0)R.push([+m[1]*60+ +m[2],h])}
+let h=`<b>Run-voortgang</b><br>Gelogd: ${tk.toFixed(1).replace('.',',')} km`;
+if(R.length>=6){const f=a=>[a.reduce((x,y)=>x+y[0],0)/a.length,a.reduce((x,y)=>x+y[1],0)/a.length],A=f(R.slice(0,3)),B=f(R.slice(-3));h+=`<br>Easy-runs: eerste 3 gem. ${fp(A[0])}/km bij HR ${Math.round(A[1])}, laatste 3 gem. ${fp(B[0])}/km bij HR ${Math.round(B[1])}. `+((B[0]<A[0]-5&&B[1]<=A[1]+2)||(B[1]<A[1]-3&&B[0]<=A[0]+5)?'Je loopt efficiënter.':'Nog geen duidelijk verschil.')}else h+='<br>Na 6 easy- of lange runs met tempo en hartslag zie je hier of je efficiënter loopt.';
+const m=String(LS.tt??'').match(/^(\d+):(\d\d)$/);h+=m?`<br>Verwachte halve marathon op basis van je 5 km (${LS.tt}): ±${fh(((+m[1]*60+ +m[2])/5+40)*21.0975)}. Paces in het plan zijn hierop aangepast.`:'<br>Vul je 5 km-tijd in bij "Uitleg" om je paces en verwachte eindtijd automatisch bij te stellen.';$('#rp').innerHTML=h}
+const EXL=[];{const sn={};Object.values(SES).forEach(s=>s[1].forEach(e=>{if(e[4]&&!sn[e[0]]){sn[e[0]]=1;EXL.push(e)}}))}
+function lc(sel,v,pr){const p=v.filter(x=>x!=null);if(!p.length){$(sel).innerHTML='<span class="mut">Nog geen gewichten ingevuld.</span>';return}const lo=Math.min(...p)-1,hi=Math.max(...p)+1,W=640,H=200,P=40,N=v.length-1,X=i=>P+i*(W-P-12)/N,Y=y=>H-26-(y-lo)/(hi-lo)*(H-46),pt=[];v.forEach((y,i)=>{if(y!=null)pt.push(X(i)+','+Y(y))});
+$(sel).innerHTML=`<svg viewBox="0 0 ${W} ${H}" style="width:100%"><line x1="${P}" y1="${H-26}" x2="${W-8}" y2="${H-26}" stroke="var(--line)"/><text x="2" y="${Y(hi)+4}" font-size="12" fill="var(--mut)">${hi.toFixed(0)}</text><text x="2" y="${Y(lo)+4}" font-size="12" fill="var(--mut)">${lo.toFixed(0)}</text>`+v.map((y,i)=>i%5==0?`<text x="${X(i)-8}" y="${H-8}" font-size="12" fill="var(--mut)">W${i+1}</text>`:'').join('')+`<polyline points="${pt.join(' ')}" fill="none" stroke="var(--pri)" stroke-width="2.5"/>`+v.map((y,i)=>y!=null?`<circle cx="${X(i)}" cy="${Y(y)}" r="${pr[i]?7:4}" fill="${pr[i]?'var(--hy)':'var(--pri)'}"/>`:'').join('')+'</svg>'}
+function scChart(){const k=$('#scx').value,v=[],pr=[];let best=0,bw=0;for(let n=1;n<=20;n++){let m=null;['L','U','F'].forEach(s=>{const x=pf(LS['w'+n+s+k]);if(x>0&&(m==null||x>m))m=x});v.push(m);if(m!=null&&m>best){pr.push(best>0);best=m;bw=n}else pr.push(false)}lc('#scc',v,pr);if(best>0)$('#scc').innerHTML+=`<p class="nh" style="margin:6px 0 0">Beste: ${String(best).replace('.',',')} kg (week ${bw}). Oranje stip = nieuw record.</p>`}
+function race(){const m=String(LS.goal||'1:57:00').match(/^(\d+):(\d\d):(\d\d)$/);if(!m){$('#rcp').innerHTML='<p class="mut" style="padding:8px">Vul je doeltijd in als u:mm:ss, bijvoorbeeld 1:57:00.</p>';return}const T=+m[1]*3600+ +m[2]*60+ +m[3],p=T/21.0975,pl=(T-5*(p+5)-11*p)/(21.0975-16),G={5:1,10:1,15:1,19:1},N={1:'Rustig starten, niet sneller dan plan',6:'Vanaf hier doeltempo',17:'Voel je je goed? Mag sneller'};let t=0,h='<table><thead><tr><th>Km<th>Tempo<th>Tijd<th>Voeding en tip</tr></thead><tbody>';
+for(let k=1;k<=22;k++){const len=k<=21?1:.0975,q=k<=5?p+5:k<=16?p:pl;t+=q*len;h+=`<tr><td>${k<=21?k:'21,1'}<td>${fp(q)}<td>${fh(t)}<td>${G[k]?'<b>1 gel (±25 g) + water</b>':''}${N[k]||''}</tr>`}
+$('#rcp').innerHTML=h+'</tbody></table>'}
+function ics(){const L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Hybride plan//NL','CALSCALE:GREGORIAN'],z=x=>x.getFullYear()+String(x.getMonth()+1).padStart(2,'0')+String(x.getDate()).padStart(2,'0'),es=x=>x.replace(/\\/g,'\\\\').replace(/([,;])/g,'\\$1');
+for(let n=1;n<=20;n++)WK[n].forEach((d,i)=>{if(d.ty=='R')return;const a=dt(n,i),b=new Date(a);b.setDate(b.getDate()+1);const c=mac(d,n),tx=pz(d.det).replace(/<br>|<\/li>|<\/ul>/g,'\n').replace(/<[^>]+>/g,'')+'\nKcal '+c[0]+', P '+c[1]+', C '+c[2]+', F '+c[3];L.push('BEGIN:VEVENT','UID:hm26-'+n+'-'+i+'@plan','DTSTAMP:20261012T000000Z','DTSTART;VALUE=DATE:'+z(a),'DTEND;VALUE=DATE:'+z(b),'SUMMARY:'+es(d.lab),'DESCRIPTION:'+es(tx).replace(/\n/g,'\\n'),'END:VEVENT')});
+L.push('END:VCALENDAR');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([L.join('\r\n')],{type:'text/calendar'}));a.download='trainingsplan.ics';a.click()}
+function upd(k){const c=k[0];if(c=='v'){const m=k.match(/^v(\d+)(\d)-/),f=m&&$('#fb'+m[1]+m[2]);if(f)f.textContent=fb(+m[1],+m[2]);const q=$('#wf'+m[1]+m[2]);if(q)q.textContent=wf(+m[1],+m[2]);const w=$('#wn');if(w)w.innerHTML=warn((cn-1)*7+cd);adv()}if('vuc'.includes(c)){const x=$('#ws');if(x)x.innerHTML=wsum(cn)}if(c=='u'||c=='c')rp();if(c=='g')adv();if(c=='v'||c=='m')trk();if(c=='w')scChart()}
+const fm=x=>x==null||isNaN(x)?'':String(Math.round(x*10)/10).replace('.',',');
+const dw=a=>pf(LS['v'+(Math.floor(a/7)+1)+a%7+'-w']);
+function mavg(a){const p=[];for(let k=Math.max(0,a-6);k<=a;k++){const x=dw(k);if(x>0)p.push(x)}return p.length?p.reduce((x,y)=>x+y)/p.length:null}
+function wavg(n){const p=[];for(let i=0;i<7;i++){const x=pf(LS['v'+n+i+'-w']);if(x>0)p.push(x)}return p.length?p.reduce((x,y)=>x+y)/p.length:null}
+function wf(n,cd){const a=(n-1)*7+cd,m=mavg(a);if(m==null)return '';const q=a>=7?mavg(a-7):null;return '7-daags gemiddelde: '+fm(m)+' kg'+(q!=null?' ('+(m-q>0?'+':'')+fm(m-q)+' t.o.v. vorige week)':'')}
+function trk(){const v=[],fi=[];let last=-1;for(let a=0;a<140;a++){const x=dw(a);v.push(x>0?x:null);if(x>0){last=a;if(fi.length<3)fi.push(x)}}
+if(last<0){$('#wst').innerHTML='<span class="mut">Vul je gewicht in via de dagkaart (blokje "Gewicht"). Schommelingen van 0,5–1,5 kg per dag zijn normaal; kijk naar het 7-daags gemiddelde.</span>';$('#gch').innerHTML=''}
+else{const m=mavg(last),q=last>=7?mavg(last-7):null,s0=fi.reduce((x,y)=>x+y)/fi.length,sg=x=>(x>0?'+':'')+fm(x);
+$('#wst').innerHTML=`<b>Gewicht</b><br>Laatste: ${fm(v[last])} kg (${DN[last%7]} ${fd(dt(Math.floor(last/7)+1,last%7))})<br>7-daags gemiddelde: ${fm(m)} kg`+(q!=null?`<br>T.o.v. vorige week: ${sg(m-q)} kg`:'')+`<br>Sinds start: ${sg(m-s0)} kg<br><small>Je gewicht schommelt dagelijks 0,5–1,5 kg door vocht en eten; let op het gemiddelde.</small>`;
+const p=v.filter(Boolean),lo=Math.min(...p)-.5,hi=Math.max(...p)+.5,N=Math.max(27,last+7),W=640,H=210,P=40,X=i=>P+i*(W-P-12)/N,Y=y=>H-26-(y-lo)/(hi-lo)*(H-46),pt=[];for(let a=0;a<=last;a++){const m2=mavg(a);if(m2!=null)pt.push(X(a)+','+Y(m2))}
+$('#gch').innerHTML=`<svg viewBox="0 0 ${W} ${H}" style="width:100%"><line x1="${P}" y1="${H-26}" x2="${W-8}" y2="${H-26}" stroke="var(--line)"/><text x="2" y="${Y(hi)+4}" font-size="12" fill="var(--mut)">${fm(hi)}</text><text x="2" y="${Y(lo)+4}" font-size="12" fill="var(--mut)">${fm(lo)}</text>`+Array.from({length:Math.floor(N/14)+1},(_,k)=>`<text x="${X(k*14)-8}" y="${H-8}" font-size="12" fill="var(--mut)">W${k*2+1}</text>`).join('')+v.map((y,i)=>y?`<circle cx="${X(i)}" cy="${Y(y)}" r="3" fill="var(--rest)"/>`:'').join('')+`<polyline points="${pt.join(' ')}" fill="none" stroke="var(--pri)" stroke-width="3"/></svg><small>Punten = dagwaarde, lijn = 7-daags gemiddelde.</small>`}
+const F0={};let h='<thead><tr><th>Week<th>Gem. gewicht (kg)<th>Buik (cm)<th>Bovenbeen (cm)<th>Borst (cm)</tr></thead><tbody>';
+for(let n=1;n<=20;n++){const w=wavg(n);let c='';['b','t','c'].forEach(f=>{const x=pf(LS['m'+n+'-'+f]);if(x>0){if(F0[f]==null)F0[f]=x;const d=x-F0[f];c+=`<td>${fm(x)}${d?` <small>(${d>0?'+':''}${fm(d)})</small>`:''}`}else c+='<td>'});h+=`<tr><td>${n}<td>${w?fm(w):''}${c}</tr>`}
+$('#l3').innerHTML=h+'</tbody>'}
+function chart(){trk()}
+function initX(){if(!$('#scx').innerHTML)$('#scx').innerHTML=EXL.map(e=>`<option value="${e[0]}">${e[1].replace(/ \(.*\)/,'')}</option>`).join('');adv();rp();scChart();race();trk()}
+let cn=OPEN,cd=idx>=0&&idx<=139?idx%7:0;
+function renderWeeks(){const n=cn,D=WK[n],m=MODE(n),b=(n-2)%4,km=D.reduce((a,d)=>a+d.km,0),ab=(n-1)*7+cd;
+let h=`<div id="wn" class="warn">${warn(ab)}</div><div class="wsel"><button data-go="-1" aria-label="Vorige week">‹</button><div><b>Week ${n}</b>, ${fd(dt(n,0))} t/m ${fd(dt(n,6))}<br><small>${PHN[ph(n)]}</small></div><button data-go="1" aria-label="Volgende week">›</button></div><div class="strip">`;
+D.forEach((d,i)=>{h+=`<button class="chip ${CL[d.ty]}${i==cd?' on':''}${(n-1)*7+i==idx?' tdy':''}" data-d="${i}"><small>${DN[i]}</small><b>${dt(n,i).getDate()}</b><i>${LS['c'+n+i]?'✓':''}</i></button>`});
+const d=D[cd],c=mac(d,n);
+h+=`</div><div class="day ${CL[d.ty]}"><small>${DN[cd]} ${fd(dt(n,cd))}${ab==idx?' (vandaag)':''}</small><h3>${d.lab}</h3><div>${pz(d.det)}</div><div class="mac"><span><b>${c[0]}</b>kcal</span><span><b>${c[1]}</b>eiwit</span><span><b>${c[2]}</b>koolh.</span><span><b>${c[3]}</b>vet</span></div><h4>Gewicht</h4><label class="rl1">Gewicht vanochtend (kg, nuchter)<input type="text" inputmode="decimal" placeholder="69,0" data-k="v${n}${cd}-w"></label><p class="nh" id="wf${n}${cd}" style="margin:6px 0 0">${wf(n,cd)}</p>${cd==0?'<p class="nh" style="margin:6px 0 0">Meetdag: vul onderaan je omtrekken in bij "Wekelijkse meting".</p>':''}<h4>Slaap en energie</h4><div class="rl"><label>Slaap (uren)<input type="text" inputmode="decimal" placeholder="7,5" data-k="v${n}${cd}-s"></label><label>Verbrand (kcal, Garmin)<input type="text" inputmode="numeric" data-k="v${n}${cd}-b"></label><label>Slaapscore (0–100)<input type="text" inputmode="numeric" data-k="v${n}${cd}-q"></label><label>HRV (ms, nacht)<input type="text" inputmode="numeric" data-k="v${n}${cd}-h"></label></div><label class="rl1">Gegeten (kcal)<input type="text" inputmode="numeric" data-k="v${n}${cd}-e"></label><p class="nh" id="fb${n}${cd}" style="margin:8px 0 0">${fb(n,cd)}</p><small>Bandbreedte gegeten min verbrand: −100 tot +250 kcal (geen tekort van betekenis). Garmin schat met ±10–20% marge: kijk vooral naar het weekgemiddelde.</small>`;
+if(d.s){const se=SES[d.s];h+=`<h4>Krachtregistratie</h4><div class="sc"><table><thead><tr><th>Oefening<th>Sets×reps<th>Doel<th>Gewicht</tr></thead><tbody>`+se[1].filter(e=>!(sk(n)&&['bi','tr'].includes(e[0]))).map(e=>{const o=rx(e,n),bs=n+''+d.s+e[0];HN[bs]=[e,n,d.s];return `<tr><td>${e[1]}<br><small class="nh" id="h${bs}">${hint(bs)}</small><td>${o.s}×${o.r}<td>${wt(e,o)}<td><input type="text" inputmode="decimal" placeholder="kg" data-k="w${n}${d.s}${e[0]}"></tr>`}).join('')+'</tbody></table></div>'}
+if(['E','T','L','W'].includes(d.ty)){const u=f=>`u${n}${cd}-${f}`;h+=`<h4>Run registreren</h4><div class="rl"><label>Afstand (km)<input type="text" inputmode="decimal" placeholder="${d.km}" data-k="${u('km')}"></label><label>Gem. tempo (/km)<input type="text" placeholder="5:40" data-k="${u('tp')}"></label><label>Gem. hartslag<input type="text" inputmode="numeric" data-k="${u('hr')}"></label><label>RPE (1–10)<input type="text" inputmode="numeric" data-k="${u('rpe')}"></label></div><label class="rl1">Opmerking<input type="text" data-k="${u('op')}"></label>`}
+h+=`<label class="done"><input type="checkbox" data-k="c${n}${cd}"> Training afgerond</label><details style="margin-top:10px"><summary>Verplaats training</summary><p><small>Wissel deze dag met een andere dag van de week.</small></p><select id="swsel">${D.map((x,i)=>i==cd?'':`<option value="${i}">${DN[i]}: ${x.lab}</option>`).join('')}</select> <button class="t" data-sw="1">Wissel</button> <button class="t" data-swr="1">Herstel week</button></details>${chk(n)}</div>`;
+const nx=[1,2,3].filter(k=>ab+k<140).map(k=>{const a=ab+k,nn=Math.floor(a/7)+1,i=a%7,e=WK[nn][i];return `<button class="nxt ${CL[e.ty]}" data-j="${a}"><b>${DN[i]} ${fd(dt(nn,i))}</b><span>${e.lab}</span></button>`}).join('');
+if(nx)h+=`<h4>Daarna</h4>${nx}`;
+h+=`<details class="card"><summary><b>Weekdoel</b></summary><ul><li><b>Focus:</b> ${WD[n-1]}</li><li><b>Belasting:</b> ${BEL[m]}${m=='build'?` (week ${b+1} van 3 in dit blok)`:''}. Loopvolume ±${km} km.</li><li><b>Herstel:</b> ${HER[m]}</li></ul></details><div class="card" id="ws">${wsum(n)}</div><div class="card"><b>Wekelijkse meting</b> <small>1× per week, liefst maandagochtend nuchter (meetpunten staan bij Gewicht)</small><div class="rl3"><label>Buik (cm)<input type="text" inputmode="decimal" data-k="m${n}-b"></label><label>Bovenbeen (cm)<input type="text" inputmode="decimal" data-k="m${n}-t"></label><label>Borst (cm)<input type="text" inputmode="decimal" data-k="m${n}-c"></label></div></div><p style="text-align:center"><button class="t" data-today="1">Naar vandaag</button></p>`;
+$('#plan').innerHTML=h;restore()}
+function restore(){document.querySelectorAll('[data-k]').forEach(t=>{const v=LS[t.dataset.k];if(t.type=='checkbox')t.checked=!!v;else if(!t.dataset.s)t.value=v||''})}
+document.addEventListener('input',e=>{const t=e.target;if(!t.dataset.k)return;LS[t.dataset.k]=t.type=='checkbox'?t.checked:t.value;sv();upd(t.dataset.k);if(/^[wr]/.test(t.dataset.k)){const b=t.dataset.k.slice(1),h=HN[b]&&$('#h'+b);if(h)h.textContent=hint(b)}if(t.dataset.s||t.dataset.k[0]=='c')renderWeeks();if(t.dataset.k[0]=='g')chart()});
+// Startgewichten
+{const seen={};let h='';Object.values(SES).forEach(s=>s[1].forEach(e=>{if(!e[4]||seen[e[0]])return;seen[e[0]]=1;h+=`<tr><td>${e[1]}<td><input type="text" inputmode="decimal" data-k="S${e[0]}" data-s="1" value="${LS['S'+e[0]]||''}" placeholder="kg"></tr>`}));$('#stab').innerHTML=h}
+// Overzicht
+{let h='<thead><tr><th>Week<th>Datum<th>Fase<th>Kracht<th>Lange run<th>Belasting</tr></thead><tbody>';for(let n=1;n<=20;n++){const D=WK[n],ks=D.filter(d=>d.s).length,L=D.find(d=>d.ty=='L'||d.ty=='W');h+=`<tr><td><a href="#w${n}" data-w="${n}">W${n}</a><td>${fd(dt(n,0))}<td>${PHN[ph(n)].split(':')[1].split(',')[0]}<td>${ks}×<td>${n==20?'Race 21,1 km':L.km+' km'}<td>${BEL[MODE(n)].split(':')[0]}</tr>`}$('#ovt').innerHTML=h+'</tbody>'}
+// Nav
+$('#nav').innerHTML='<a href="#top">Plan</a><a href="#ov">Overzicht</a><a href="#vg">Voortgang</a><a href="#gw">Gewicht</a><a href="#rd">Race</a><a href="#hulp">Uitleg</a><a href="#end">Afsluiting</a>';
+document.addEventListener('click',e=>{const t=e.target.closest('[data-go],[data-d],[data-j],[data-w],[data-today],[data-sw],[data-swr]');if(!t)return;const g=x=>{renderWeeks();if(x)$('#plan').scrollIntoView()};
+if(t.dataset.go){cn=Math.min(20,Math.max(1,cn+ +t.dataset.go));g()}
+else if(t.dataset.d){cd=+t.dataset.d;g()}
+else if(t.dataset.j){const a=+t.dataset.j;cn=Math.floor(a/7)+1;cd=a%7;g(1)}
+else if(t.dataset.w){e.preventDefault();cn=+t.dataset.w;cd=0;g(1)}
+else if(t.dataset.sw){const j=+$('#swsel').value,o=LS['sw'+cn]||[0,1,2,3,4,5,6];[o[cd],o[j]]=[o[j],o[cd]];LS['sw'+cn]=o;sv();applySw();cd=j;g()}
+else if(t.dataset.swr){delete LS['sw'+cn];sv();applySw();g()}
+else{cn=OPEN;cd=idx>=0&&idx<=139?idx%7:0;g(1)}});
+$('#cdn').textContent=idx<0?`Start over ${-idx} dagen (30 nov), halve marathon over ${139-idx} dagen`:idx<139?`Nog ${139-idx} dagen tot de halve marathon`:idx==139?'Vandaag is het race-dag!':'Programma afgerond'
+// Logboek
+function lt(id,cols,rows,first){let h='<thead><tr>'+cols.map(c=>`<th>${c}`).join('')+'</tr></thead><tbody>';for(let r=0;r<rows;r++){h+='<tr>'+cols.map((c,j)=>j==0&&first?`<td>${r+1}`:`<td><input type="text" data-k="${id}-${r}-${j}">`).join('')+'</tr>'}$('#'+id).innerHTML=h+'</tbody>'}
+function chartOld(){const v=[];for(let r=0;r<=20;r++){const x=parseFloat((LS['g'+r+'-1']||'').replace(',','.'));v.push(x>0?x:null)}const p=v.filter(Boolean);if(!p.length){$('#gch').innerHTML='<span class="mut">Vul gewichten in de tabel in om je grafiek te zien.</span>';return}const lo=Math.min(...p)-.5,hi=Math.max(...p)+.5,W=640,H=210,P=40,X=i=>P+i*(W-P-12)/20,Y=y=>H-26-(y-lo)/(hi-lo)*(H-46);const pts=v.map((y,i)=>y?X(i)+','+Y(y):null).filter(Boolean);$('#gch').innerHTML=`<svg viewBox="0 0 ${W} ${H}" style="width:100%"><line x1="${P}" y1="${H-26}" x2="${W-8}" y2="${H-26}" stroke="var(--line)"/><text x="2" y="${Y(hi)+4}" font-size="12" fill="var(--mut)">${hi.toFixed(1)}</text><text x="2" y="${Y(lo)+4}" font-size="12" fill="var(--mut)">${lo.toFixed(1)}</text>`+[0,5,10,15,20].map(i=>`<text x="${X(i)-8}" y="${H-8}" font-size="12" fill="var(--mut)">${i?'W'+i:'Start'}</text>`).join('')+`<polyline points="${pts.join(' ')}" fill="none" stroke="var(--pri)" stroke-width="2.5"/>`+v.map((y,i)=>y?`<circle cx="${X(i)}" cy="${Y(y)}" r="4" fill="var(--pri)"/>`:'').join('')+'</svg>'}
+// Paces calculator
+function calc(){const m=$('#tt').value.match(/^(\d+):(\d\d)$/);if(!m){$('#ttout').textContent='';return}const p=(+m[1]*60+ +m[2])/5,f=x=>{x=Math.round(x);return Math.floor(x/60)+':'+String(x%60).padStart(2,'0')},hm=(p+40)*21.0975,g=x=>{x=Math.round(x);return Math.floor(x/3600)+':'+String(Math.floor(x%3600/60)).padStart(2,'0')+':'+String(x%60).padStart(2,'0')};
+$('#ttout').textContent=`Easy ${f(p+80)}–${f(p+110)}/km, steady ${f(p+55)}–${f(p+65)}, HM-tempo ${f(p+40)} (eindtijd ±${g(hm)}), threshold ${f(p+20)}–${f(p+25)}, interval ${f(p-5)}–${f(p)}.`}
+$('#tt').value=LS.tt||'';$('#tt').addEventListener('input',e=>{LS.tt=e.target.value;sv();calc();renderWeeks();rp()});calc();
+renderWeeks();chart();initX();$('#scx').onchange=scChart;$('#goal').value=LS.goal||'';$('#goal').addEventListener('input',e=>{LS.goal=e.target.value;sv();race()});$('#icsb').onclick=ics;try{if('serviceWorker' in navigator&&/github\.io$|localhost$/.test(location.hostname))navigator.serviceWorker.register('sw.js')}catch(e){}
+$('#exp').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(LS,null,1)],{type:'application/json'}));a.download='trainingsdata.json';a.click()};
+$('#imp').onchange=e=>{const f=e.target.files[0];if(!f)return;f.text().then(t=>{try{LS=JSON.parse(t);sv();document.querySelectorAll('[data-s]').forEach(i=>i.value=LS[i.dataset.k]||'');$('#tt').value=LS.tt||'';renderWeeks();chart();calc();initX()}catch(x){alert('Bestand niet leesbaar')}})};
+</script></body></html>
